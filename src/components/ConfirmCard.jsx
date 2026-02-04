@@ -19,6 +19,7 @@ const ConfirmCard = ({user}) => {
           <strong>Position:</strong> {user.position}
         </p>
       </div>
+      
     </div>
   );
 };

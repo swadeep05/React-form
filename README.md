@@ -1,16 +1,82 @@
-# React + Vite
+# 📝 React Registration Form with Confirmation Card
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and structured React form application built using **React + Tailwind CSS**.  
+The project demonstrates controlled components, form validation, conditional rendering, and parent-child communication using a confirmation workflow.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- Controlled form inputs using React state
+- Custom form validation with dynamic error messages
+- Field-level error display with red border highlights
+- Confirmation card before final submission
+- Edit & Confirm workflow
+- Conditional rendering between Form and Confirm Card
+- Clean component-based architecture
+- Styled using Tailwind CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧠 Concepts Implemented
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- useState Hook
+- Lifting State Up
+- Props & Component Communication
+- Conditional Rendering
+- Form Handling in React
+- Validation Logic
+- Separation of Concerns
+- Parent Controlled UI Flow
+
+---
+
+## 🧩 Project Structure
+
+src/
+│
+├── components/
+│ ├── Form.jsx
+│ └── ConfirmCard.jsx
+│
+├── App.jsx
+└── main.jsx
+
+
+---
+
+## 🔄 Application Flow
+
+1. User fills the registration form
+2. Inputs are validated on submit
+3. If valid → user data sent to parent (App.jsx)
+4. Form is replaced with ConfirmCard
+5. User can:
+   - Edit → go back to form
+   - Okay → confirm submission
+
+---
+
+## 🛠️ Tech Stack
+
+- React
+- JavaScript (ES6+)
+- Tailwind CSS
+- Vite
+
+---
+
+## ▶️ Run Locally
+
+Clone the project:
+
+```bash
+git clone https://github.com/swadeep05/react-form.git
+Go to project folder:-
+cd react-form
+
+Install dependencies:-
+npm install
+
+Start development server:-
+npm run dev
